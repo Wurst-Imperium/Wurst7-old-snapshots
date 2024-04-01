@@ -71,7 +71,7 @@ public final class ParkourHack extends Hack implements UpdateListener
 		Box adjustedBox = box.stretch(0, -minDepth.getValue(), 0)
 			.expand(-edgeDistance.getValue(), 0, -edgeDistance.getValue());
 		
-		if(!MC.world.isSpaceEmpty(MC.player, adjustedBox))
+		if(!MC.world.method_59085(MC.player, adjustedBox))
 			return;
 		
 		MC.player.jump();

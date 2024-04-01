@@ -70,7 +70,7 @@ public final class SafeWalkHack extends Hack
 		Box adjustedBox = box.stretch(0, -player.getStepHeight(), 0)
 			.expand(-edgeDistance.getValue(), 0, -edgeDistance.getValue());
 		
-		if(MC.world.isSpaceEmpty(player, adjustedBox))
+		if(MC.world.method_59085(player, adjustedBox))
 			clipping = true;
 		
 		setSneaking(clipping);

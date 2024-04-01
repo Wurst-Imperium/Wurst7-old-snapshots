@@ -72,7 +72,7 @@ public final class StepHack extends Hack implements UpdateListener
 			return;
 		
 		Box box = player.getBoundingBox().offset(0, 0.05, 0).expand(0.05);
-		if(!MC.world.isSpaceEmpty(player, box.offset(0, 1, 0)))
+		if(!MC.world.method_59085(player, box.offset(0, 1, 0)))
 			return;
 		
 		double stepHeight = BlockUtils.getBlockCollisions(box)
